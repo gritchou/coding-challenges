@@ -1,0 +1,72 @@
+/* html, body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-size: 14px;
+	color: black;
+	height: 100%;
+} */
+
+.content {
+	height: 100%;
+	position: relative;
+}
+
+.open {
+	background-color: white;
+	color: black;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	border: none;
+	width: 6em;
+	height: 2em;
+	/* border-radius: 5px; */
+	border: 2px solid black;
+	font-size: 1.2em;
+}
+
+.open:hover {
+	cursor: pointer;
+}
+
+.sidebar {
+	width: 10em;
+	color: white;
+	position: relative;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 2em;
+	animation: slide 0.5s forwards;
+	animation-delay: 2s;
+}
+
+.sidebar .close::before {
+	content: '×';
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.sidebar .close:hover {
+	cursor: pointer;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;;
+}
+
+.sidebar a + a {
+	padding-top: 0.5em;
+}
+
+.sidebar a:visited {
+	text-decoration: none;
+}
